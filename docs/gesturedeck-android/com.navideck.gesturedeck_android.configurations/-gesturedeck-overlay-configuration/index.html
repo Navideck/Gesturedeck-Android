@@ -1,193 +1,235 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>GesturedeckOverlayConfiguration</title>
-<link href="../../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script><script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script><link href="../../../styles/style.css" rel="Stylesheet"><link href="../../../styles/logo-styles.css" rel="Stylesheet"><link href="../../../styles/jetbrains-mono.css" rel="Stylesheet"><link href="../../../styles/main.css" rel="Stylesheet"><script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script><script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script><script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script><script type="text/javascript" src="../../../scripts/main.js" async="async"></script>  </head>
-  <body>
-    <div id="container">
-      <div id="leftColumn"><a href="../../../index.html">
-          <div id="logo"></div>
-        </a>
-        <div id="paneSearch"></div>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>gesturedeck-android</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":gesturedeck-android:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
         <div id="sideMenu"></div>
-      </div>
-      <div id="main">
-        <div id="leftToggler"><span class="icon-toggler"></span></div>
-<script type="text/javascript" src="../../../scripts/main.js"></script>        <div class="main-content" id="content" pageIds="gesturedeck-android::com.navideck.gesturedeck_android.configurations/GesturedeckOverlayConfiguration///PointingToDeclaration//772321643">
-          <div class="navigation-wrapper" id="navigation-wrapper">
-            <div class="breadcrumbs"><a href="../../../index.html">gesturedeck-android</a>/<a href="../index.html">com.navideck.gesturedeck_android.configurations</a>/<a href="index.html">GesturedeckOverlayConfiguration</a></div>
-            <div class="pull-right d-flex">
-              <div id="searchBar"></div>
-            </div>
-          </div>
-          <div class="cover ">
-            <h1 class="cover"><span>Gesturedeck</span><wbr></wbr><span>Overlay</span><wbr></wbr><span>Configuration</span></h1>
-            <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace">class <a href="index.html">GesturedeckOverlayConfiguration</a>(context: <a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a>, activity: <a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a>?, bitmapCallback: () -&gt; <a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a>??, tintColor: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>?, topIconDrawable: <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a>?, iconSwipeLeftDrawable: <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a>?, iconSwipeRightDrawable: <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a>?, iconTapDrawable: <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a>?, iconTapToggledDrawable: <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a>?, rootView: <a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a>?)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-          </div>
-          <div class="tabbedcontent">
-            <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Functions">Functions</button></div>
-            <div class="tabs-section-body">
-              <h2 class="">Functions</h2>
-              <div class="table" data-togglable="Functions"><a data-name="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FanimateActionIcon%2F%23android.graphics.drawable.Drawable%3F%23kotlin.Long%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" anchor-label="animateActionIcon" id="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FanimateActionIcon%2F%23android.graphics.drawable.Drawable%3F%23kotlin.Long%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="animate-action-icon.html">animateActionIcon</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FanimateActionIcon%2F%23android.graphics.drawable.Drawable%3F%23kotlin.Long%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace">fun <a href="animate-action-icon.html">animateActionIcon</a>(iconDrawable: <a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a>? = null, duration: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>? = null)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="gesturedeck-android::com.navideck.gesturedeck_android.configurations/GesturedeckOverlayConfiguration///PointingToDeclaration//-547376012">
+  <div class="breadcrumbs"><a href="../../../index.html">gesturedeck-android</a><span class="delimiter">/</span><a href="../index.html">com.navideck.gesturedeck_android.configurations</a><span class="delimiter">/</span><span class="current">GesturedeckOverlayConfiguration</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Gesturedeck</span><wbr></wbr><span>Overlay</span><wbr></wbr><span><span>Configuration</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">GesturedeckOverlayConfiguration</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">activity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">bitmapCallback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a><span class="token operator">?</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">tintColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">topIconDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">iconSwipeLeftDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">iconSwipeRightDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">iconTapDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">iconTapToggledDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">rootView<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
   </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2Fdispose%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" anchor-label="dispose" id="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2Fdispose%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="dispose.html">dispose</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2Fdispose%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace">fun <a href="dispose.html">dispose</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FhideEmptyBlurView%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" anchor-label="hideEmptyBlurView" id="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FhideEmptyBlurView%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="hide-empty-blur-view.html">hideEmptyBlurView</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FhideEmptyBlurView%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace">fun <a href="hide-empty-blur-view.html">hideEmptyBlurView</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FonDragGestureUpdate%2F%23com.navideck.gesturedeck_android.model.GestureState%23android.view.MotionEvent%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" anchor-label="onDragGestureUpdate" id="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FonDragGestureUpdate%2F%23com.navideck.gesturedeck_android.model.GestureState%23android.view.MotionEvent%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="on-drag-gesture-update.html">onDragGestureUpdate</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FonDragGestureUpdate%2F%23com.navideck.gesturedeck_android.model.GestureState%23android.view.MotionEvent%3F%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace">fun <a href="on-drag-gesture-update.html">onDragGestureUpdate</a>(state: <a href="../../com.navideck.gesturedeck_android.model/-gesture-state/index.html">GestureState</a>, event: <a href="https://developer.android.com/reference/kotlin/android/view/MotionEvent.html">MotionEvent</a>? = null)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FremoveOverlayIfVisible%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" anchor-label="removeOverlayIfVisible" id="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FremoveOverlayIfVisible%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="remove-overlay-if-visible.html">removeOverlayIfVisible</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FremoveOverlayIfVisible%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace">fun <a href="remove-overlay-if-visible.html">removeOverlayIfVisible</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FsetTopText%2F%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" anchor-label="setTopText" id="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FsetTopText%2F%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="set-top-text.html">setTopText</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FsetTopText%2F%23kotlin.String%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace">fun <a href="set-top-text.html">setTopText</a>(text: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FsetTrialMode%2F%23kotlin.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" anchor-label="setTrialMode" id="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FsetTrialMode%2F%23kotlin.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="set-trial-mode.html">setTrialMode</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FsetTrialMode%2F%23kotlin.Boolean%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace">fun <a href="set-trial-mode.html">setTrialMode</a>(value: <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FshowCenterIcon%2F%23com.navideck.gesturedeck_android.model.CenterIcon%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" anchor-label="showCenterIcon" id="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FshowCenterIcon%2F%23com.navideck.gesturedeck_android.model.CenterIcon%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="show-center-icon.html">showCenterIcon</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FshowCenterIcon%2F%23com.navideck.gesturedeck_android.model.CenterIcon%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace">fun <a href="show-center-icon.html">showCenterIcon</a>(centerIcon: <a href="../../com.navideck.gesturedeck_android.model/-center-icon/index.html">CenterIcon</a>)<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
-                </div>
-<a data-name="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FshowEmptyBlurView%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" anchor-label="showEmptyBlurView" id="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FshowEmptyBlurView%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
-                <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
-                  <div class="main-subrow keyValue ">
-                    <div class=""><span class="inline-flex"><a href="show-empty-blur-view.html">showEmptyBlurView</a><span class="anchor-wrapper"><span class="anchor-icon" pointing-to="%5Bcom.navideck.gesturedeck_android.configurations%2FGesturedeckOverlayConfiguration%2FshowEmptyBlurView%2F%23%2FPointingToDeclaration%2F%5D%2FFunctions%2F772321643"></span>
-                          <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                        </span></span></div>
-                    <div>
-                      <div class="title"><div class="divergent-group" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release"><div class="with-platform-tags"><span class="pull-right"></span></div>
-
-  <div>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-depenent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace">fun <a href="show-empty-blur-view.html">showEmptyBlurView</a>()<span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div></div></div>
-  </div>
-</div>
-</div>
-                    </div>
-                  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-908121861%2FConstructors%2F-547376012" anchor-label="GesturedeckOverlayConfiguration" id="-908121861%2FConstructors%2F-547376012" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-gesturedeck-overlay-configuration.html"><span>Gesturedeck</span><wbr></wbr><span>Overlay</span><wbr></wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-908121861%2FConstructors%2F-547376012"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">activity<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/app/Activity.html">Activity</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">bitmapCallback<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a><span class="token operator">?</span><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">tintColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">topIconDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">iconSwipeLeftDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">iconSwipeRightDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">iconTapDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">iconTapToggledDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">rootView<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/ViewGroup.html">ViewGroup</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer"><span class="go-to-top-icon"><a href="#content"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span></div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1930004972%2FFunctions%2F-547376012" anchor-label="animateActionIcon" id="-1930004972%2FFunctions%2F-547376012" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="animate-action-icon.html"><span>animate</span><wbr></wbr><span>Action</span><wbr></wbr><span><span>Icon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1930004972%2FFunctions%2F-547376012"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="animate-action-icon.html"><span class="token function">animateActionIcon</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">iconDrawable<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html">Drawable</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1749590743%2FFunctions%2F-547376012" anchor-label="dispose" id="-1749590743%2FFunctions%2F-547376012" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dispose.html"><span><span>dispose</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1749590743%2FFunctions%2F-547376012"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="dispose.html"><span class="token function">dispose</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1924357777%2FFunctions%2F-547376012" anchor-label="hideEmptyBlurView" id="1924357777%2FFunctions%2F-547376012" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hide-empty-blur-view.html"><span>hide</span><wbr></wbr><span>Empty</span><wbr></wbr><span>Blur</span><wbr></wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1924357777%2FFunctions%2F-547376012"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="hide-empty-blur-view.html"><span class="token function">hideEmptyBlurView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="395289612%2FFunctions%2F-547376012" anchor-label="onDragGestureUpdate" id="395289612%2FFunctions%2F-547376012" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-drag-gesture-update.html"><span>on</span><wbr></wbr><span>Drag</span><wbr></wbr><span>Gesture</span><wbr></wbr><span><span>Update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="395289612%2FFunctions%2F-547376012"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-drag-gesture-update.html"><span class="token function">onDragGestureUpdate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">state<span class="token operator">: </span><a href="../../com.navideck.gesturedeck_android.model/-gesture-state/index.html">GestureState</a><span class="token punctuation">, </span></span><span class="parameter ">event<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/MotionEvent.html">MotionEvent</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1304441609%2FFunctions%2F-547376012" anchor-label="removeOverlayIfVisible" id="1304441609%2FFunctions%2F-547376012" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-overlay-if-visible.html"><span>remove</span><wbr></wbr><span>Overlay</span><wbr></wbr><span>If</span><wbr></wbr><span><span>Visible</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1304441609%2FFunctions%2F-547376012"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-overlay-if-visible.html"><span class="token function">removeOverlayIfVisible</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="415287922%2FFunctions%2F-547376012" anchor-label="setTopText" id="415287922%2FFunctions%2F-547376012" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-top-text.html"><span>set</span><wbr></wbr><span>Top</span><wbr></wbr><span><span>Text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="415287922%2FFunctions%2F-547376012"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-top-text.html"><span class="token function">setTopText</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">text<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-421044160%2FFunctions%2F-547376012" anchor-label="setTrialMode" id="-421044160%2FFunctions%2F-547376012" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-trial-mode.html"><span>set</span><wbr></wbr><span>Trial</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-421044160%2FFunctions%2F-547376012"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-trial-mode.html"><span class="token function">setTrialMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-515044822%2FFunctions%2F-547376012" anchor-label="showCenterIcon" id="-515044822%2FFunctions%2F-547376012" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-center-icon.html"><span>show</span><wbr></wbr><span>Center</span><wbr></wbr><span><span>Icon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-515044822%2FFunctions%2F-547376012"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-center-icon.html"><span class="token function">showCenterIcon</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">centerIcon<span class="token operator">: </span><a href="../../com.navideck.gesturedeck_android.model/-center-icon/index.html">CenterIcon</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="398931980%2FFunctions%2F-547376012" anchor-label="showEmptyBlurView" id="398931980%2FFunctions%2F-547376012" data-filterable-set=":gesturedeck-android:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":gesturedeck-android:dokkaHtml/release" data-filterable-set=":gesturedeck-android:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-empty-blur-view.html"><span>show</span><wbr></wbr><span>Empty</span><wbr></wbr><span>Blur</span><wbr></wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="398931980%2FFunctions%2F-547376012"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":gesturedeck-android:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="show-empty-blur-view.html"><span class="token function">showEmptyBlurView</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
 </html>
-
