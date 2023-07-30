@@ -6,6 +6,15 @@ Revolutionize your Android app's user experience with the extraordinary power of
 
 Imagine enhancing your app with the ability to adjust volume, skip tracks, and perform various actions effortlessly, making interactions smoother and more natural than ever before. Whether users are driving, biking, or engaged in any activity that demands their full attention, Gesturedeck ensures a seamless experience that enhances productivity and safety.
 
+## Key Features
+
+- Intuitive touch gestures for seamless device control.
+- Customizable gesture actions for enhanced user interactions.
+- Integrated GesturedeckMedia for media app controls with overlay UI support.
+- Support for volume key actions with GesturedeckMedia.
+- Sensitivity settings for fine-tuning gesture responsiveness.
+- Easy integration with UniversalVolume for unified volume control.
+
 ## Gesturedeck
 
 Gesturedeck is the low-level API that allows you to build custom functionalities on top of Gesturedeck's gestures. Without introducing any additional UI, your app gains access to powerful gesture controls that redefine user interactions.
@@ -187,3 +196,7 @@ For detailed API reference, visit [GesturedeckMedia API Reference](https://navid
 An Android library for easy volume control on different devices. Integrates smoothly with GesturedeckMedia for intuitive volume adjustments using pan gestures.
 
 You can use [UniversalVolume](https://github.com/Navideck/Universal-Volume) with GesturedeckMedia. Simply import UniversalVolume, and GesturedeckMedia will automatically use UniversalVolume for changing volume on pan gestures.
+
+## Contact
+
+For questions or support, please contact us at team@navideck.com. Thank you for choosing Volumedeck SDK!
