@@ -14,14 +14,60 @@ Imagine enhancing your app with the ability to adjust volume, skip tracks, and p
 - Support for volume key actions with GesturedeckMedia.
 - Sensitivity settings for fine-tuning gesture responsiveness.
 - Easy integration with UniversalVolume for unified volume control.
+- Does not require internet connectivity
 
 ## Gesturedeck
 
 Gesturedeck is the low-level API that allows you to build custom functionalities on top of Gesturedeck's gestures. Without introducing any additional UI, your app gains access to powerful gesture controls that redefine user interactions.
 
-### Getting Started with Gesturedeck
+## Getting Started with Gesturedeck
 
-To integrate Gesturedeck into your Android app, you have two options:
+### Add Gesturedeck SDK to your project
+
+Gesturedeck SDK can be easily added to your Android project using Jitpack. Jitpack is a package repository service that allows you to use Git repositories as dependencies in your projects.
+
+To add Gesturedeck SDK to your project, follow these steps:
+
+1. Open your project's `build.gradle` file.
+
+2. Add the Jitpack repository to the list of repositories:
+
+```groovy
+allprojects {
+    repositories {
+        // ... other repositories ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+3. Open your app module's `build.gradle` file.
+
+4. Add the Gesturedeck SDK dependency:
+
+```groovy
+dependencies {
+    implementation 'com.github.Navideck:Gesturedeck-Android:1.1.1'
+}
+```
+
+Replace `'1.1.1'` with the latest release version of Gesturedeck SDK. You can find the latest version on the [Gesturedeck SDK GitHub releases page](https://github.com/Navideck/Gesturedeck-Android/releases).
+
+5. Sync your project with Gradle by clicking on "Sync Now" in Android Studio.
+
+Now, Gesturedeck SDK is successfully added to your project via Jitpack. You can start using the Gesturedeck API in your app as described in the previous sections.
+
+Please note that Jitpack fetches the library directly from the GitHub repository, so you need an active internet connection while building your project. Also, ensure that you are using a version that is compatible with your app's requirements.
+
+### Import Gesturedeck
+
+```kotlin
+import com.navideck.gesturedeck_android.Gesturedeck
+```
+
+### Initialize Gesturedeck
+
+To have Gesturedeck working in your Android app, you have two options:
 
 #### Option 1: Subclass GesturedeckActivity
 
@@ -84,7 +130,19 @@ gesturedeck = Gesturedeck(
 )
 ```
 
-### Listen to Individual Gestures
+### Start and Stop Gesturedeck
+
+To start and stop Gesturedeck's gesture detection, you can call the `start()` and `stop()` methods respectively.
+
+```kotlin
+// Start gesture detection
+gesturedeck.start()
+
+// Stop gesture detection
+gesturedeck.stop()
+```
+
+## Listen to Individual Gestures
 
 To listen to individual gestures, you can use the properties `tapAction`, `swipeRightAction`, `swipeLeftAction`, `panAction`, and `longPressAction` in GesturedeckMedia's constructor.
 
@@ -98,7 +156,7 @@ gesturedeckMedia.longPressAction = { /* Handle long press gesture here */ }
 
 For detailed API reference, visit [Gesturedeck API Reference](https://navideck.github.io/Gesturedeck-Android/gesturedeck-android/com.navideck.gesturedeck_android/-gesturedeck/index.html).
 
-### Customize Sensitivity
+## Customize Sensitivity
 
 To manage the sensitivity of the pan gesture, you can pass the `PanSensitivity` enum to the constructor. The default sensitivity level is `PanSensitivity.MEDIUM`.
 
@@ -114,27 +172,23 @@ gesturedeck = Gesturedeck(
 )
 ```
 
-#### Start and Stop Gesturedeck
-
-To start and stop Gesturedeck's gesture detection, you can call the `start()` and `stop()` methods respectively.
-
-```kotlin
-// Start gesture detection
-gesturedeck.start()
-
-// Stop gesture detection
-gesturedeck.stop()
-```
-
 ## GesturedeckMedia - Media Controls
 
 GesturedeckMedia is a specialized implementation built on top of Gesturedeck, tailored specifically for media apps. It provides default gesture actions that can be customized to suit your app's requirements.
+If your app is a media app, you can use GesturedeckMedia instead of Gesturedeck.
 
 ### Getting Started with GesturedeckMedia
 
 To use GesturedeckMedia for showing media controls UI, follow these steps:
 
-1. Initialize `GesturedeckMedia` with `GesturedeckMediaOverlay`:
+1. Import GesturedeckMedia
+
+```kotlin
+import com.navideck.gesturedeck_android.GesturedeckMedia
+import com.navideck.gesturedeck_android.GesturedeckMediaOverlay
+```
+
+2. Initialize `GesturedeckMedia` with `GesturedeckMediaOverlay`:
 
 ```kotlin
 val gesturedeckMedia = GesturedeckMedia(
@@ -193,10 +247,18 @@ For detailed API reference, visit [GesturedeckMedia API Reference](https://navid
 
 ## UniversalVolume - Unified Volume Control
 
-An Android library for easy volume control on different devices. Integrates smoothly with GesturedeckMedia for intuitive volume adjustments using pan gestures.
+An Android library for easy volume control on different devices. Integrates smoothly with GesturedeckMedia for intuitive volume adjustment across all devices.
 
 You can use [UniversalVolume](https://github.com/Navideck/Universal-Volume) with GesturedeckMedia. Simply import UniversalVolume, and GesturedeckMedia will automatically use UniversalVolume for changing volume on pan gestures.
 
+## Free to Use
+Gesturedeck SDK is free to use, providing you with the full functionality of the SDK without any time limitations. You are welcome to integrate it into both personal and commercial projects. When using Gesturedeck SDK for free, a watermark will be presented during runtime. It is strictly prohibited  to hide, remove, or alter in any way the watermark from the free version of Gesturedeck SDK.
+
+### Activation Key and Watermark Removal
+For those who wish to remove the watermark from their app, we offer an activation key that allows you to use the SDK without any watermarks. However, please be aware that the watermark-free version is not available for free and requires a purchase.
+
+To inquire about purchasing an activation key or if you have any other questions related to licensing and usage, please contact us at team@navideck.com. We will be happy to assist you with the process and provide you with the necessary information.
+
 ## Contact
 
-For questions or support, please contact us at team@navideck.com. Thank you for choosing Volumedeck SDK!
+For questions or support, please contact us at team@navideck.com. Thank you for choosing Gesturedeck SDK!
