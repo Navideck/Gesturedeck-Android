@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
 Alternatively, you can add this tag in the Manifest file:
 
 ```xml
-<application android:name="com.navideck.gesturedeck_android.globalActivity.GlobalApplication" />
+<application android:name="com.navideck.gesturedeck_android.global_activity.GlobalApplication" />
 ```
 
 and initialize without passing the activity:
