@@ -94,10 +94,9 @@ class MainActivity : AppCompatActivity() {
 
         gesturedeck = Gesturedeck(
             this,
-            panSensitivity = PanSensitivity.MEDIUM,
             tapAction = { /* Handle tap gesture here */ },
-            swipeRightAction = { /* Handle swipe right gesture here */ },
             swipeLeftAction = { /* Handle swipe left gesture here */ },
+            swipeRightAction = { /* Handle swipe right gesture here */ },
             panAction = { /* Handle pan gesture here */ },
             longPressAction = { /* Handle long press gesture here */ }
         )
@@ -121,10 +120,9 @@ and initialize without passing the activity:
 
 ```kotlin
 gesturedeck = Gesturedeck(
-    panSensitivity = PanSensitivity.MEDIUM,
     tapAction = { /* Handle tap gesture here */ },
-    swipeRightAction = { /* Handle swipe right gesture here */ },
     swipeLeftAction = { /* Handle swipe left gesture here */ },
+    swipeRightAction = { /* Handle swipe right gesture here */ },
     panAction = { /* Handle pan gesture here */ },
     longPressAction = { /* Handle long press gesture here */ }
 )
@@ -144,12 +142,12 @@ gesturedeck.stop()
 
 ## Listen to Individual Gestures
 
-To listen to individual gestures, you can use the properties `tapAction`, `swipeRightAction`, `swipeLeftAction`, `panAction`, and `longPressAction` in GesturedeckMedia's constructor.
+To listen to individual gestures, you can use the properties `tapAction`, `swipeLeftAction`, `swipeRightAction`, `panAction`, and `longPressAction` in GesturedeckMedia's constructor.
 
 ```kotlin
 gesturedeckMedia.tapAction = { /* Handle tap gesture here */ }
-gesturedeckMedia.swipeRightAction = { /* Handle swipe right gesture here */ }
 gesturedeckMedia.swipeLeftAction = { /* Handle swipe left gesture here */ }
+gesturedeckMedia.swipeRightAction = { /* Handle swipe right gesture here */ }
 gesturedeckMedia.panAction = { /* Handle pan gesture here */ }
 gesturedeckMedia.longPressAction = { /* Handle long press gesture here */ }
 ```
@@ -165,8 +163,8 @@ gesturedeck = Gesturedeck(
     this,
     panSensitivity = PanSensitivity.MEDIUM,
     tapAction = { /* Handle tap gesture here */ },
-    swipeRightAction = { /* Handle swipe right gesture here */ },
     swipeLeftAction = { /* Handle swipe left gesture here */ },
+    swipeRightAction = { /* Handle swipe right gesture here */ },
     panAction = { /* Handle pan gesture here */ },
     longPressAction = { /* Handle long press gesture here */ }
 )
@@ -197,8 +195,8 @@ val gesturedeckMedia = GesturedeckMedia(
         activity = this@MainActivity,
     ),
     tapAction = { /* Handle tap gesture here */ },
-    swipeRightAction = { /* Handle swipe right gesture here */ },
     swipeLeftAction = { /* Handle swipe left gesture here */ },
+    swipeRightAction = { /* Handle swipe right gesture here */ },
     panAction = { /* Handle pan gesture here */ },
     longPressAction = { /* Handle long press gesture here */ }
 )
@@ -218,8 +216,8 @@ MediaOverlay(
         rootView = YOUR_VIEW_GROUP,
     ),
     tapAction = { /* Handle tap gesture here */ },
-    swipeRightAction = { /* Handle swipe right gesture here */ },
     swipeLeftAction = { /* Handle swipe left gesture here */ },
+    swipeRightAction = { /* Handle swipe right gesture here */ },
     panAction = { /* Handle pan gesture here */ },
     longPressAction = { /* Handle long press gesture here */ }
 )
