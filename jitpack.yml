@@ -1,3 +1,5 @@
-install: 
-  - FILE="-Dfile=gesturedeck.aar" 
-  - mvn install:install-file $FILE -DgroupId=com.github.Navideck -DartifactId=Gesturedeck-Android -Dversion=1.5.0 -Dpackaging=aar -DgeneratePom=true
+install:
+  - FILE="gesturedeck.aar"
+  - DOC="gesturedeck-javadoc.jar"
+  - VERSION="1.5.1"
+  - mvn install:install-file -Dfile=$FILE -Djavadoc=$DOC -DgroupId=com.github.Navideck -DartifactId=Gesturedeck-Android -Dversion=$VERSION -Dpackaging=aar -DgeneratePom=true
