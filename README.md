@@ -1,5 +1,9 @@
 # Gesturedeck SDK - Android
 
+<p align="center">
+  <img src="https://navideck.com/sites/navideck.com/files/2023-10/Gesturedeck%20SDK.png" height=150 />
+</p>
+
 ## Overview
 
 Revolutionize your Android app's user experience with the extraordinary power of Gesturedeck! Seamlessly integrated into your Android application, Gesturedeck empowers users to effortlessly control their devices through intuitive touch gestures, without even needing to look at the screen.
@@ -15,6 +19,7 @@ Imagine enhancing your app with the ability to adjust volume, skip tracks, and p
 - Sensitivity settings for fine-tuning gesture responsiveness.
 - Easy integration with UniversalVolume for unified volume control.
 - Does not require internet connectivity
+- Jetpack Compose / XML layout / Kotlin & Java support
 
 ## Gesturedeck
 
@@ -47,13 +52,19 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.Navideck:Gesturedeck-Android:1.1.1'
+    implementation 'com.github.Navideck:Gesturedeck-Android:1.6.2'
 }
 ```
 
-Replace `'1.1.1'` with the latest release version of Gesturedeck SDK. You can find the latest version on the [Gesturedeck SDK GitHub releases page](https://github.com/Navideck/Gesturedeck-Android/releases).
+Replace `'1.6.2'` with the latest release version of Gesturedeck SDK. You can find the latest version on the [Gesturedeck SDK GitHub releases page](https://github.com/Navideck/Gesturedeck-Android/releases).
 
-5. Sync your project with Gradle by clicking on "Sync Now" in Android Studio.
+5. Make sure to add `appcompat` if it is missing. It should be added by default in new projects but might be missing in Jetpack Compose projects.
+
+```groovy
+implementation 'androidx.appcompat:appcompat:1.6.1'
+```
+
+6. Sync your project with Gradle by clicking on "Sync Now" in Android Studio.
 
 Now, Gesturedeck SDK is successfully added to your project via Jitpack. You can start using the Gesturedeck API in your app as described in the previous sections.
 
@@ -242,6 +253,24 @@ class MainActivity : AppCompatActivity() {
 ```
 
 For detailed API reference, visit [GesturedeckMedia API Reference](https://navideck.github.io/Gesturedeck-Android/gesturedeck-android/com.navideck.gesturedeck_android/-gesturedeck-media/index.html).
+
+## Java
+
+Gesturedeck is fully compatible with `Java`. When using Java you can initialize Gesturedeck or GesturedeckMedia using:
+
+```java
+Gesturedeck gesturedeck = new Gesturedeck(context);
+```
+
+You need to pass touch events to Gesturedeck using:
+
+```java
+@Override
+public boolean onTouchEvent(MotionEvent event) {
+    if (event != null) gesturedeck.onTouchEvent(event);
+    return super.onTouchEvent(event);
+}
+```
 
 ## UniversalVolume - Unified Volume Control
 
