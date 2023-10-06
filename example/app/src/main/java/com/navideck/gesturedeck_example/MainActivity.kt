@@ -1,4 +1,4 @@
-package com.navideck.gesturedeckexample
+package com.navideck.gesturedeck_example
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.navideck.gesturedeck_android.GesturedeckMedia
 import com.navideck.gesturedeck_android.GesturedeckMediaOverlay
+import com.navideck.gesturedeckexample.R
 
 class MainActivity : AppCompatActivity() {
     private lateinit var gesturedeck: GesturedeckMedia

@@ -1,4 +1,4 @@
-package com.navideck.gesturedeckexample;
+package com.navideck.gesturedeck_example;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,6 +15,7 @@ import com.navideck.gesturedeck_android.GesturedeckMediaOverlay;
 import com.navideck.gesturedeck_android.model.GestureState;
 import com.navideck.gesturedeck_android.model.PanSensitivity;
 import com.navideck.gesturedeck_android.model.SwipeDirection;
+import com.navideck.gesturedeckexample.R;
 
 public class MainActivityJava extends AppCompatActivity {
     private GesturedeckMedia gestureDeck;

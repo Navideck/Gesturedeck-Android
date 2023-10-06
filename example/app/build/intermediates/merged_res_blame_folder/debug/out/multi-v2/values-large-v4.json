@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.navideck.gesturedeckexample.app-mergeDebugResources-51:/values-large-v4/values-large-v4.xml",
+            "outputFile": "com.navideck.gesturedeckexample.app-mergeDebugResources-55:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
                     "source": "/Users/rohitsangwan/.gradle/caches/transforms-3/4ca325a8732e23fa52610474ea8a90be/transformed/material-1.10.0/res/values-large-v4/values-large-v4.xml",

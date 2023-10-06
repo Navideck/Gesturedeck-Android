@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.navideck.gesturedeckexample.app-mergeDebugResources-51:/values-am/values-am.xml",
+            "outputFile": "com.navideck.gesturedeckexample.app-mergeDebugResources-55:/values-am/values-am.xml",
             "map": [
                 {
                     "source": "/Users/rohitsangwan/.gradle/caches/transforms-3/5e20c23498f4fb73764797755c5ac1b6/transformed/core-1.12.0/res/values-am/values-am.xml",

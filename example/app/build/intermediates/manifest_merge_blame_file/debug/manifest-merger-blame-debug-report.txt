@@ -21,14 +21,14 @@
 15-->[androidx.core:core:1.12.0] /Users/rohitsangwan/.gradle/caches/transforms-3/5e20c23498f4fb73764797755c5ac1b6/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 15-->[androidx.core:core:1.12.0] /Users/rohitsangwan/.gradle/caches/transforms-3/5e20c23498f4fb73764797755c5ac1b6/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 16    <uses-permission android:name="android.permission.INTERNET" />
-16-->[com.github.Navideck:Gesturedeck-Android:1.6.0] /Users/rohitsangwan/.gradle/caches/transforms-3/d06cdb00d8cdeadf3ec90530cb2d1877/transformed/Gesturedeck-Android-1.6.0/AndroidManifest.xml:9:5-67
-16-->[com.github.Navideck:Gesturedeck-Android:1.6.0] /Users/rohitsangwan/.gradle/caches/transforms-3/d06cdb00d8cdeadf3ec90530cb2d1877/transformed/Gesturedeck-Android-1.6.0/AndroidManifest.xml:9:22-64
+16-->[com.github.Navideck:Gesturedeck-Android:1.6.2] /Users/rohitsangwan/.gradle/caches/transforms-3/fb9d6baaee7813d6e6a4ff023ba2f127/transformed/Gesturedeck-Android-1.6.2/AndroidManifest.xml:9:5-67
+16-->[com.github.Navideck:Gesturedeck-Android:1.6.2] /Users/rohitsangwan/.gradle/caches/transforms-3/fb9d6baaee7813d6e6a4ff023ba2f127/transformed/Gesturedeck-Android-1.6.2/AndroidManifest.xml:9:22-64
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[com.github.Navideck:Gesturedeck-Android:1.6.0] /Users/rohitsangwan/.gradle/caches/transforms-3/d06cdb00d8cdeadf3ec90530cb2d1877/transformed/Gesturedeck-Android-1.6.0/AndroidManifest.xml:10:5-79
-17-->[com.github.Navideck:Gesturedeck-Android:1.6.0] /Users/rohitsangwan/.gradle/caches/transforms-3/d06cdb00d8cdeadf3ec90530cb2d1877/transformed/Gesturedeck-Android-1.6.0/AndroidManifest.xml:10:22-76
+17-->[com.github.Navideck:Gesturedeck-Android:1.6.2] /Users/rohitsangwan/.gradle/caches/transforms-3/fb9d6baaee7813d6e6a4ff023ba2f127/transformed/Gesturedeck-Android-1.6.2/AndroidManifest.xml:10:5-79
+17-->[com.github.Navideck:Gesturedeck-Android:1.6.2] /Users/rohitsangwan/.gradle/caches/transforms-3/fb9d6baaee7813d6e6a4ff023ba2f127/transformed/Gesturedeck-Android-1.6.2/AndroidManifest.xml:10:22-76
 18    <uses-permission android:name="android.permission.VIBRATE" />
-18-->[com.github.Navideck:Gesturedeck-Android:1.6.0] /Users/rohitsangwan/.gradle/caches/transforms-3/d06cdb00d8cdeadf3ec90530cb2d1877/transformed/Gesturedeck-Android-1.6.0/AndroidManifest.xml:11:5-66
-18-->[com.github.Navideck:Gesturedeck-Android:1.6.0] /Users/rohitsangwan/.gradle/caches/transforms-3/d06cdb00d8cdeadf3ec90530cb2d1877/transformed/Gesturedeck-Android-1.6.0/AndroidManifest.xml:11:22-63
+18-->[com.github.Navideck:Gesturedeck-Android:1.6.2] /Users/rohitsangwan/.gradle/caches/transforms-3/fb9d6baaee7813d6e6a4ff023ba2f127/transformed/Gesturedeck-Android-1.6.2/AndroidManifest.xml:11:5-66
+18-->[com.github.Navideck:Gesturedeck-Android:1.6.2] /Users/rohitsangwan/.gradle/caches/transforms-3/fb9d6baaee7813d6e6a4ff023ba2f127/transformed/Gesturedeck-Android-1.6.2/AndroidManifest.xml:11:22-63
 19
 20    <application
 20-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:5:5-32:19
@@ -57,8 +57,8 @@
 33-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:14:9-56
 34        <activity
 34-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:17:9-25:20
-35            android:name="com.navideck.gesturedeckexample.MainActivity"
-35-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:18:13-41
+35            android:name="com.navideck.gesturedeck_example.MainActivity"
+35-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:18:13-73
 36            android:exported="true" >
 36-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:19:13-36
 37            <intent-filter>
@@ -74,82 +74,88 @@
 42        </activity>
 43        <activity
 43-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:26:9-28:39
-44            android:name="com.navideck.gesturedeckexample.MainActivityJava"
-44-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:27:13-45
+44            android:name="com.navideck.gesturedeck_example.MainActivityJava"
+44-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:27:13-77
 45            android:exported="true" />
 45-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:28:13-36
 46        <activity
 46-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:29:9-31:39
-47            android:name="com.navideck.gesturedeckexample.MainActivityJetpack"
-47-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:30:13-48
+47            android:name="com.navideck.gesturedeck_example.MainActivityJetpack"
+47-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:30:13-80
 48            android:exported="true" />
 48-->/Users/rohitsangwan/Drive/Devlopment/Navideck/gesturedeck_sdk/gesturedeck_sdk_android/public/example/app/src/main/AndroidManifest.xml:31:13-36
-49
-50        <provider
-50-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-51            android:name="androidx.startup.InitializationProvider"
-51-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-52            android:authorities="com.navideck.GesturedeckExample.androidx-startup"
-52-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-53            android:exported="false" >
-53-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-54            <meta-data
-54-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-55-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-56                android:value="androidx.startup" />
-56-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+49        <activity
+49-->[androidx.compose.ui:ui-tooling:1.3.3] /Users/rohitsangwan/.gradle/caches/transforms-3/ea66378d2548271c8775a675916f75e5/transformed/ui-tooling-1.3.3/AndroidManifest.xml:23:9-25:39
+50            android:name="androidx.compose.ui.tooling.PreviewActivity"
+50-->[androidx.compose.ui:ui-tooling:1.3.3] /Users/rohitsangwan/.gradle/caches/transforms-3/ea66378d2548271c8775a675916f75e5/transformed/ui-tooling-1.3.3/AndroidManifest.xml:24:13-71
+51            android:exported="true" />
+51-->[androidx.compose.ui:ui-tooling:1.3.3] /Users/rohitsangwan/.gradle/caches/transforms-3/ea66378d2548271c8775a675916f75e5/transformed/ui-tooling-1.3.3/AndroidManifest.xml:25:13-36
+52
+53        <provider
+53-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+54            android:name="androidx.startup.InitializationProvider"
+54-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+55            android:authorities="com.navideck.GesturedeckExample.androidx-startup"
+55-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+56            android:exported="false" >
+56-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
 57            <meta-data
-57-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/rohitsangwan/.gradle/caches/transforms-3/a20cd0b4aa071b7f7d420ebee0f6f599/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-58-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/rohitsangwan/.gradle/caches/transforms-3/a20cd0b4aa071b7f7d420ebee0f6f599/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+57-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+58                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+58-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
 59                android:value="androidx.startup" />
-59-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/rohitsangwan/.gradle/caches/transforms-3/a20cd0b4aa071b7f7d420ebee0f6f599/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+59-->[androidx.emoji2:emoji2:1.2.0] /Users/rohitsangwan/.gradle/caches/transforms-3/fe2f0d8158c2034b3d5ce1b29c363711/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
 60            <meta-data
-60-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-61                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-61-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+60-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/rohitsangwan/.gradle/caches/transforms-3/a20cd0b4aa071b7f7d420ebee0f6f599/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+61                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+61-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/rohitsangwan/.gradle/caches/transforms-3/a20cd0b4aa071b7f7d420ebee0f6f599/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
 62                android:value="androidx.startup" />
-62-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-63        </provider>
-64
-65        <receiver
-65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-66            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-67            android:directBootAware="false"
-67-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-68            android:enabled="true"
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-69            android:exported="true"
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-70            android:permission="android.permission.DUMP" >
-70-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-71            <intent-filter>
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-72                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-73            </intent-filter>
+62-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/rohitsangwan/.gradle/caches/transforms-3/a20cd0b4aa071b7f7d420ebee0f6f599/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+63            <meta-data
+63-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+64-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+65                android:value="androidx.startup" />
+65-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+66        </provider>
+67
+68        <receiver
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+69            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+70            android:directBootAware="false"
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+71            android:enabled="true"
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+72            android:exported="true"
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+73            android:permission="android.permission.DUMP" >
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
 74            <intent-filter>
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-75                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+75                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
 76            </intent-filter>
 77            <intent-filter>
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-78                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+78                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
 79            </intent-filter>
 80            <intent-filter>
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-81                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+81                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
 82            </intent-filter>
-83        </receiver>
-84    </application>
-85
-86</manifest>
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+84                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/rohitsangwan/.gradle/caches/transforms-3/1dd8e424d13ba47ba0e555c9a4d5b206/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+85            </intent-filter>
+86        </receiver>
+87    </application>
+88
+89</manifest>

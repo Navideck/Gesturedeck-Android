@@ -1,4 +1,4 @@
-package com.navideck.gesturedeckexample
+package com.navideck.gesturedeck_example
 
 import android.content.Context
 import android.os.Bundle
@@ -32,6 +32,7 @@ import androidx.compose.ui.unit.sp
 import androidx.core.content.ContextCompat
 import com.navideck.gesturedeck_android.GesturedeckMedia
 import com.navideck.gesturedeck_android.GesturedeckMediaOverlay
+import com.navideck.gesturedeckexample.R
 
 class MainActivityJetpack : AppCompatActivity() {
     private lateinit var gesturedeck: GesturedeckMedia
