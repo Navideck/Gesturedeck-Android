@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.navideck.gesturedeckexample.app-mergeDebugResources-51:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/rohitsangwan/.gradle/caches/transforms-3/0772480b5c9e1e4a58ea498fec948ab4/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}
