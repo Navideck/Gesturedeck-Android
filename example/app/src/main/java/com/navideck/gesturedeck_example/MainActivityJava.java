@@ -29,49 +29,10 @@ public class MainActivityJava extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) actionBar.setTitle("Gesturedeck Example Java");
-        TextView gesturedeckEvent = findViewById(R.id.txtEvent);
         btnStart = findViewById(R.id.btnStart);
         btnStop = findViewById(R.id.btnStop);
 
-        gestureDeck = new GesturedeckMedia(this,
-                // TapAction
-                () -> {
-                    gesturedeckEvent.setText("Gesturedeck Event: Tap");
-                    return null;
-                },
-                // SwipeLeftAction
-                () -> {
-                    gesturedeckEvent.setText("Gesturedeck Event: Swipe Left");
-                    return null;
-                },
-                // SwipeRightAction
-                () -> {
-                    gesturedeckEvent.setText("Gesturedeck Event: Swipe Right");
-                    return null;
-                },
-                // PanAction
-                (MotionEvent event, SwipeDirection swipeDirection, GestureState state) -> {
-                    gesturedeckEvent.setText("Gesturedeck Event: Pan");
-                    return null;
-                },
-                // Pan Sensitivity
-                PanSensitivity.MEDIUM,
-                // LongPressAction
-                (GestureState gestureState) -> {
-                    gesturedeckEvent.setText("Gesturedeck Event: Long Press");
-                    return null;
-                },
-                // ReverseHorizontalSwipes
-                false,
-                // AutoStart
-                true,
-                // GesturedeckMediaOverlay
-                new GesturedeckMediaOverlay(
-                        this,
-                        null,
-                        ContextCompat.getColor(this, R.color.primary)
-                )
-        );
+        gestureDeck = new GesturedeckMedia(this);
 
         updateGesturedeckState(true);
 

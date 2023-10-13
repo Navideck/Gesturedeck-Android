@@ -37,31 +37,12 @@ import com.navideck.gesturedeckexample.R
 class MainActivityJetpack : AppCompatActivity() {
     private lateinit var gesturedeck: GesturedeckMedia
     private val isGesturedeckStarted = mutableStateOf(true)
-    private val gesturedeckEvent = mutableStateOf("")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.title = "Gesturedeck Example Jetpack"
 
-        gesturedeck = GesturedeckMedia(
-            this,
-            tapAction = {
-                gesturedeckEvent.value = "Tap"
-            },
-            swipeLeftAction = {
-                gesturedeckEvent.value = "Swipe Left"
-            },
-            swipeRightAction = {
-                gesturedeckEvent.value = "Swipe Right"
-            },
-            panAction = { _, _, _ ->
-                gesturedeckEvent.value = "Pan"
-            },
-            gesturedeckMediaOverlay = GesturedeckMediaOverlay(
-                this,
-                tintColor = ContextCompat.getColor(applicationContext, R.color.primary),
-            ),
-        )
+        gesturedeck = GesturedeckMedia(this)
 
         setContent {
             homeApp(this)
@@ -113,7 +94,7 @@ class MainActivityJetpack : AppCompatActivity() {
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Text(
-                            text = "Gesturedeck Event: ${gesturedeckEvent.value}",
+                            text = "Perform Gestures",
                             fontSize = 18.sp,
                             fontWeight = FontWeight.W400
                         )
