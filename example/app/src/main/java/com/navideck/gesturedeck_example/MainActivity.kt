@@ -22,24 +22,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.title = "Gesturedeck Example"
 
-        val gesturedeckEvent = findViewById<TextView>(R.id.txtEvent)
         btnStart = findViewById(R.id.btnStart)
         btnStop = findViewById(R.id.btnStop)
 
         gesturedeck = GesturedeckMedia(
             this,
-            tapAction = {
-                gesturedeckEvent.text = "Gesturedeck Event: Tap"
-            },
-            swipeLeftAction = {
-                gesturedeckEvent.text = "Gesturedeck Event: Swipe Left"
-            },
-            swipeRightAction = {
-                gesturedeckEvent.text = "Gesturedeck Event: Swipe Right"
-            },
-            panAction = { _, _, _ ->
-                gesturedeckEvent.text = "Gesturedeck Event: Pan"
-            },
             gesturedeckMediaOverlay = GesturedeckMediaOverlay(
                 this,
                 tintColor = ContextCompat.getColor(applicationContext, R.color.primary),
