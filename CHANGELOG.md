@@ -1,3 +1,7 @@
+## 1.7.0
+* Allow disabling specific gestures in GesturedeckMedia
+* Add `observingRootView` parameter to set the touch listener on the root view of the activity, set to false if you want to set the touch listener on a specific view or activity and call onTouchEvent manually.
+
 ## 1.6.3
 * Show logo in watermark
 
