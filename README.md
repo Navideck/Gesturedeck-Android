@@ -64,7 +64,7 @@ dependencies {
 }
 ```
 
-Replace `'1.7.0'` with the latest release version of Gesturedeck SDK. You can find the latest version on the [Gesturedeck SDK GitHub releases page](https://github.com/Navideck/Gesturedeck-Android/releases).
+Replace `'1.7.0'` with the latest release version of Gesturedeck SDK:  [![](https://jitpack.io/v/Navideck/Gesturedeck-Android.svg)](https://jitpack.io/#Navideck/Gesturedeck-Android)
 
 5. Make sure to add `appcompat` if it is missing. It should be added by default in new projects but might be missing in Jetpack Compose projects.
 
@@ -96,9 +96,9 @@ You can make your `MainActivity` subclass `GesturedeckActivity` to gain access t
 class MainActivity : GesturedeckActivity()
 ```
 
-#### Option 2: Manually feed touch events to Gesturedeck
+#### Option 2: Manually initialize Gesturedeck
 
-If you prefer manual control, you can manually feed touch events to Gesturedeck. Follow these steps:
+If you prefer manual control, you can manually initialize Gesturedeck. Follow these steps:
 
 1. Initialize Gesturedeck manually by passing the activity or context in the constructor:
 
@@ -120,12 +120,20 @@ class MainActivity : AppCompatActivity() {
             longPressAction = { /* Handle long press gesture here */ }
         )
     }
+}
+```
 
-    override fun dispatchTouchEvent(event: MotionEvent): Boolean {
-        // Feed all touchEvents to Gesturedeck
-        gesturedeck.onTouchEvent(event)
-        return super.dispatchTouchEvent(event)
-    }
+To feed touch events from specific view or activity use `observingRootView` parameter like this
+
+```kotlin
+gesturedeck = Gesturedeck(
+    observingRootView = false
+)
+
+override fun dispatchTouchEvent(event: MotionEvent): Boolean {
+   // Feed all touchEvents to Gesturedeck
+   gesturedeck.onTouchEvent(event)
+   return super.dispatchTouchEvent(event)
 }
 ```
 
