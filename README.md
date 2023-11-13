@@ -60,11 +60,9 @@ allprojects {
 
 ```groovy
 dependencies {
-    implementation 'com.github.Navideck:Gesturedeck-Android:1.7.0'
+    implementation 'com.github.Navideck:Gesturedeck-Android:1.8.0'
 }
 ```
-
-Replace `'1.7.0'` with the latest release version of Gesturedeck SDK:  [![](https://jitpack.io/v/Navideck/Gesturedeck-Android.svg)](https://jitpack.io/#Navideck/Gesturedeck-Android)
 
 5. Make sure to add `appcompat` if it is missing. It should be added by default in new projects but might be missing in Jetpack Compose projects.
 
