@@ -1,3 +1,10 @@
+## 1.8.0
+* Improved contrast through automatic adjustment of the overlay background color to match the tint color
+* Improve GesturedeckMediaOverlay API
+* New volume icon style
+* Fix Pan and LongPress action if set to null
+* Improve activation key handling
+
 ## 1.7.1
 * Fix GesturedeckMedia crash if set as null
 
